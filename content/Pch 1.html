@@ -1,13 +1,144 @@
-<h1>Welcome my website</h1>
-<p></p>
-<h1>Homework</h1>
-<p></p>
-<h2>Pch 1</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923239 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923239 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='Welcome my website.html'>Welcome my website</a><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li><a href='Pch 1.html'>Pch 1</a><li><a href='Pch 17.html'>Pch 17</a></li></ul><li><a href='Word.html'>Word</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Homework << <a href='Homework.html'>Previous</a> <a href='Pch 17.html'>Next</a> >> Pch 17<br /><h1>Pch 1</h1>
 <p></p>
 <p>Pch1 1、Introduction</p>
 <p><span data-contrast="none"><span data-ccp-parastyle="heading 3"><span color="#ff6600"></span></span></span></p>
 <p><span data-contrast="none">原文:This lesson will cover the basics of PC </span><span data-contrast="none">Hardware.</span><span data-contrast="none"> First, you will learn the various parts of both desktop and laptop </span><span data-contrast="none">computers.</span><span data-contrast="none"> Next, you will discover basic terms that are associated with computers, such as hardware, software, and </span><span data-contrast="none">firmware.</span><span data-contrast="none"> You will learn the most basic functions of a computer: input, output, storage, and </span><span data-contrast="none">processing.</span><span data-contrast="none"> Next, you will explore various input and output interfaces on the computer and the associated </span><span data-contrast="none">cables.</span><span data-contrast="none"> Finally, you will review connections between common peripherals and discuss the standard </span><span data-contrast="none">ports.</span></p>
-<p><span data-ccp-props='{"201341983":1,"335559740":360}'> </span><span data-ccp-props='{"201341983":1,"335559740":360}'>                                        <img alt="" height="155" src="/images/201703101444414490808544.jpg" width="207"/></span></p>
+<p><span data-ccp-props='{"201341983":1,"335559740":360}'> </span><span data-ccp-props='{"201341983":1,"335559740":360}'>                                        <img alt="" height="155" src="./../images/201703101444414490808544.jpg" width="207"/></span></p>
 <p><span class="TextRun SCXW14378781 BCX0" data-contrast="none" lang="ZH-TW" xml:lang="ZH-TW"><span class="NormalTextRun SCXW14378781 BCX0">翻譯:本課將介紹硬<span>體</span>的基礎知識。首先，您將學習台式計算機和攜帶式計算機的各個部分。接下來，您將發現與計算機關聯的基本術語，例如<span style="color: #ff0000;">硬體，軟體和韌體</span>。您將學習計算機的最<span style="color: #ff0000;">基本功能：輸入，輸出，存儲和處理</span>。接下來，您將探索計算機上的<span style="color: #ff0000;">各種輸入和輸出接口以及相關的電纜</span>。最後，您將回顧通用外設之間的連接並討論標準端口。</span></span><span class="TextRun SCXW14378781 BCX0" data-contrast="none" lang="ZH-TW" xml:lang="ZH-TW"><span class="NormalTextRun SCXW14378781 BCX0"> </span></span></p>
 <p><br/><br/><br/><br/><span>Pch1 </span>2、Functions of Computers</p>
 <p></p>
@@ -22,7 +153,7 @@
 <p lang="">原文:A computer system includes hardware, software, and firmware. To build a computer, we must first gather the required hardware. The hardware is the part of the computer that you can touch and feel. When most people see a typical computer, they understand that there are physical components to what they are using, such as the the hard metallic or plastic System unit, central processing unit (CPU), power supply, disk drives, and other essential components. Hardware is limited by its manufacture date and specifically by the motherboard installed. Depending on age and availability, some of the hardware items may be expensive to acquire, repair, or replace. For example, if the computer is running slower over time as you add newer software, it may be necessary to increase the amount of physical memory, called<span> </span><span class="term" lang="">RAM<span> </span></span>(random access memory), in the computer. In order to do this, the technician would need to purchase the correct size, speed, and style of memory according to the motherboard specifications and install it in the computer which will then enhance its ability to process information more quickly.</p>
 <p id="N106A9" lang="">Computer hardware consists of the mechanical and electrical parts of the computer. Data flows through the motherboard in what is known as the system bus. External ports, which are discussed in more detail further in this lesson, allow peripheral devices to be connected to the system unit. Common ports are USB, serial, and parallel ports.</p>
 <p id="N106AC" lang="">Peripheral devices consist of hardware attached to the system unit and are designated as input, output, or both. Traditional input device examples are the mouse and keyboard which are used to input data.</p>
-<p lang=""><img alt="" height="164" src="/images/下載.jpg" width="308"/></p>
+<p lang=""><img alt="" height="164" src="./../images/下載.jpg" width="308"/></p>
 <p lang=""></p>
 <p id="N106BD" lang="">Output devices consist of common items such as monitors, speakers, and printers. All of these devices are ways that the computer can give feedback to the user through either visual or auditory output.</p>
 <p id="N106C0" lang="">Traditionally singular devices have evolved to become both input and output. Gaming Joysticks which provide feedback to the user through vibrations and of course the touch-screen display now serve as both.</p>
@@ -71,7 +202,7 @@
 <br/><span data-contrast="none"><span data-ccp-parastyle="heading 3"><span color="#ff6600">Pch1 9、</span></span></span>Connections Between Common Peripherals and Standard Ports
 <div class="contentContain">
 <p id="N10688" lang="">The peripherals connect to the computer via standard ports. Ports allow for information to flow into or out of the computer as part of the input and output subsystems. External devices, such as keyboards, mice, printers, scanners, storage devices, monitors, and others can connect to the computer through various types of cables, which connect to specific ports. On most modern systems, this has been reduced down to a common, standard interface, the universal serial bus port (USB port). Older systems have various ports for various functions, which are now referred to as legacy ports, such as PS/2, serial, and parallel ports. They were difficult to configure and required hardware resources to be dedicated to them, such as interrupt requests, direct memory access, and specific I/O (input/output) port addresses. In USB, this is all handled by the operating system automatically. This makes hardware conflicts rare in current systems. Many customers will still have computers with legacy ports. So, it is important to understand multiple ports and connections.</p>
-<p lang=""><img alt="" height="197" src="/images/51555.jpg" width="256"/></p>
+<p lang=""><img alt="" height="197" src="./../images/51555.jpg" width="256"/></p>
 <p lang="">翻譯:<span>外圍設備通過標準端口連接到計算機。</span><span>端口允許信息作為輸入和輸出子系統的一部分流入或流出計算機。</span><span>外部設備（例如鍵盤，滑鼠，打印機，掃描器，存儲設備，顯示器和其他設備）可以通過各種類型的電纜連接到計算機，這些電纜連接到特定的端口。</span><span>在大多數現代系統上，這已簡化為通用的標準接口，即通用串行總線端口（USB端口）。</span><span>較舊的系統具有用於各種功能的各種端口，這些端口現在稱為傳統端口，例如PS / 2，串行和並行端口。</span><span>它們很難配置，<span style="color: #ff0000;">並且需要專用於它們的硬件資源，例如中斷請求，直接內存訪問和特定的I / O（輸入/輸出）端口地址。</span></span><span style="color: #ff0000;">在USB中，這全部由操作系統自動處理。</span><span><span style="color: #ff0000;">這使得在當前系統中很少發生硬件衝突</span>。</span><span>許多客戶仍將擁有帶有舊端口的計算機。</span><span>因此，了解多個端口和連接很重要。</span></p>
 <p lang=""><span></span></p>
 <p lang=""><span>Pch1 10、USB and PS/2</span></p>
@@ -83,7 +214,7 @@
 <p id="N1068F" lang=""><span style="color: #ff0000;">USB</span> :The<span> </span><span class="term" lang="">universal serial bus (USB)<span> </span></span>has replaced many of the external input and output ports on modern computers. In fact, USB can connect virtually any device to a computer, in modern devices.</p>
 <p id="N106A3" lang="">Things such as mice and keyboards, which used to use PS/2 or serial ports, now use USB. Things like printers and scanners, which once used parallel or SCSI ports, now use USB as well. Small computer system interface (SCSI) is a set of parallel interface standards developed by the American National Standards Institute (ANSI) for attaching printers, disk drives, scanners and other peripherals to computers. SCSI (pronounced "skuzzy") is supported by all major operating systems. USB began with version 1.1, which provided two speeds of operations: low-speed (1.5 Mbps for input devices such as mice/keyboards) and full-speed (12 Mbps for other devices, such as webcams, digital cameras, scanners, and printers). USB 2.0 further increased speed to what is known as high-speed or hi-speed (480 Mbps), allowing for USB to provide faster access to external storage devices such as hard drives, helping to replace SCSI and FireWire ports. USB 3.0, the current version, is known as superspeed, because it provides up to 5 Gbps of bandwidth for very fast access to external devices and can be identified by the blue color. Newer versions of USB are backward compatible with older versions, but you should not connect different versions of USB on the same port, as this slows the port down to the lowest version. For example, if you plug in a four-port USB hub to a USB 3.0 port, but then connect a USB 1.1 mouse to the hub, the entire four-port hub will now run at a maximum speed of 12 Mbps (USB 1.1 speeds). Each USB port can be daisy-chained to provide up to 127 devices per port, using USB hubs.</p>
 <p id="N106A6" lang="">USB cables should be kept under three meters (approximately nine feet) in length for USB 1.1 and 3.0. For the USB 2.0 variant, you can use cables up to five meters (approximately 15 feet) without issues. If you use cables longer than the recommended length, you may get errors in your input/output over USB, so it is best to keep the USB cables short. If you need a longer cable run, you must use a hub as a repeater to help boost the power signal over the USB cable. There are two types of hubs: self-powered and bus-powered. Self-powered hubs have their own power adapter and connect to the wall outlet to provide power to the hub. Bus-powered are instead powered solely from the source USB port that they are connected to on the computer. This provides minimal amperage for the devices connected to the USB hub that can cause issues when connecting multiple hubs to each other. For connection of multiple hubs, it is best practice to use self-powered hubs. Each USB port can support up to 127 different devices in the chain, with the root hub for the computer having two ports directly connected to the motherboard. If you need more USB ports, you can do this by adding hubs (self-powered or bus-powered), using motherboard USB header cables, or adding expansion cards that contain more USB ports.</p>
-<p lang=""><img alt="" height="142" src="/images/5646+.jpg" width="355"/></p>
+<p lang=""><img alt="" height="142" src="./../images/5646+.jpg" width="355"/></p>
 <p lang="">翻譯1:</p>
 <div class="contentContain">
 <div class="section" id="N10688">
@@ -93,7 +224,7 @@
 <p id="N106A6" lang=""><span><span><span style="color: #ff0000;">對於USB 1.1和3.0，USB電纜的長度應保持在三米（約9英尺）以下</span>。</span><span>對於USB 2.0版本，您可以使用最長5米（約15英尺）的電纜而不會出現問題。</span><span>如果使用的電纜長度超過建議的長度，則通過USB進行的輸入/輸出可能會出現錯誤，因此最好使USB電纜的長度短。</span><span>如果需要較長的電纜，則必須使用集線器作為中繼器，以幫助增強USB電纜上的電源信號。</span><span>集線器有兩種類型：自供電和總線供電。</span><span>自供電的集線器具有自己的電源適配器，並連接至壁裝電源插座，以為集線器供電。</span><span>總線供電僅由它們在計算機上連接的源USB端口供電。</span><span>這為連接到USB集線器的設備提供了最小的電流強度，當將多個集線器相互連接時會引起問題。</span><span>對於連接多個集線器，最佳做法是使用自供電集線器。</span><span>每個USB端口可在鏈中最多支持127個不同的設備，計算機的根集線器具有直接連接到主板的兩個端口。</span><span>如果需要更多USB端口，則可以通過添加集線器（自供電或總線供電），使用主板USB接頭連接線或添加包含更多USB端口的擴展卡來實現。</span><span>計算機的根集線器有兩個直接連接到主板的端口。</span><span>如果需要更多USB端口，則可以通過添加集線器（自供電或總線供電），使用主板USB接頭連接線或添加包含更多USB端口的擴展卡來實現。</span><span>計算機的根集線器有兩個直接連接到主板的端口。</span><span>如果需要更多USB端口，則可以通過添加集線器（自供電或總線供電），使用主板USB接頭連接線或添加包含更多USB端口的擴展卡來實現。</span></span></p>
 <p id="N106C0" lang="">原文2:</p>
 <p lang=""><span><span style="color: #ff0000;">PS/2</span>:</span><span>PS/2</span> ports, also known as mini-DIN ports, were commonly used for keyboards and mice until the past decade. Recently, these ports have been replaced by USB in most machines. These ports, though, are color-coded for the device which they are intended to be used with. The keyboard port is colored purple, and the mouse port is colored green. Even though these ports look identical, they are not interchangeable. If you plug a mouse into the keyboard port, it simply won’t work. Additionally, unlike USB, these ports are not hot-swappable. Instead, you must restart the machine after plugging the device in for the computer to recognize the new mouse or keyboard.</p>
-<p lang=""><img alt="" height="188" src="/images/1wd.jpg" width="268"/></p>
+<p lang=""><img alt="" height="188" src="./../images/1wd.jpg" width="268"/></p>
 <p lang="">翻譯2<span style="color: #ff0000;">:</span><span><span style="color: #ff0000;">PS / 2端口，也稱為mini-DIN端口，在過去十年中一直廣泛用於鍵盤和滑鼠</span>。</span><span>最近，在大多數機器中，這些端口已被USB取代。</span><span>但是，這些端口已針對要使用的設備進行了顏色編碼。</span><span>鍵盤端口為紫色，鼠標端口為綠色。</span><span>即使這些端口看起來相同，也不能互換。</span><span>如果將鼠標插入鍵盤端口，則根本無法使用。</span><span>此外，與USB不同，這些端口不可熱插拔。</span><span>而是必須在插入設備後重新啟動機器，計算機才能識別新的鼠標或鍵盤。</span></p>
 <p lang="">Pch1 11、SCSI and FireWire</p>
 <p lang=""></p>
@@ -112,7 +243,7 @@
 <p lang=""><span></span>Pch1 12、Serial and Parallel Ports</p>
 <p lang=""><span></span>原文1:</p>
 <p lang=""><span><span style="color: #ff0000;">Serial ports</span>:Serial ports, also known as COM or RS-232 ports, were used heavily in the 1980s and 1990s for serial communication as input/output ports. They were often used for external modems, mice, trackballs, touchpads, plotters, label printers, dot-matrix printers, PDA (Palm Pilot) docking stations, digital cameras, and PC-to-PC connections. USB has replaced serial ports for all of these uses in modern computers, but some people still have a need for a serial port. If your computer doesn’t have a serial port (which is very common in modern machines), you can add one using an expansion card or a USB to serial adapter. Serial ports come in two varieties: DB-25 (containing 25 pins) and DB-9 (containing nine pins). The DB-9 variety is the most common in use. Serial ports are generally slow, since they send data one bit at a time over the wire. There is no standard serial cable pinout; instead, they are created for the application they are used for, such as a null-modem cable to connect two computers directly, or a modem cable to connect the computer to an external modem. The most common variety of serial cable in use today is the CISCO rollover cable, which has a nine-pin serial port on one end and an RJ-45 connector (like a network cable) on the other end. This cable is used to connect a computer to a CISCO router or switch for configuration tasks.</span></p>
-<p lang=""><span><img alt="" height="185" src="/images/edwe.jpg" width="272"/></span></p>
+<p lang=""><span><img alt="" height="185" src="./../images/edwe.jpg" width="272"/></span></p>
 <p lang=""><span>翻譯:<span style="color: #ff0000;">序列埠，也稱為COM或RS-232端口</span>，在1980年代和1990年代被大量用於串行通信，<span style="color: #ff0000;">作為輸入/輸出端口。</span><span>它們通常用於外部調製解調器，滑鼠，軌跡球，觸摸板，繪圖儀，標籤打印機，點矩陣打印機，PDA（Palm Pilot）擴展塢，數碼相機以及PC到PC的連接。</span><span>USB已取代了現代計算機中所有這些用途的串行端口，但是有些人仍然需要串行端口。</span><span>如果您的計算機沒有串行端口（這在現代計算機中很常見），則可以使用擴展卡或USB到串行適配器添加一個。</span><span>串行端口有兩種：DB-25（包含25個引腳）和DB-9（包含9個引腳）。</span><span>DB-9品種是最常用的品種。</span><span>串口通常很慢，</span><span>因為它們一次通過導線發送數據。</span><span>沒有標準的串行電纜引出線。</span><span>而是為它們所使用的應用程序創建它們，例如直接連接兩台計算機的零調製解調器電纜，或將計算機連接到外部調製解調器的調製解調器電纜。</span><span>當今使用的最常見的串行電纜是CISCO翻轉電纜，其一端有一個9針串行端口，而另一端有一個RJ-45連接器（如網絡電纜）。</span><span>該電纜用於將計算機連接到CISCO路由器或交換機以執行配置任務。</span><span>或調製解調器電纜將計算機連接到外部調製解調器。</span><span>當今使用的最常見的串行電纜是CISCO翻轉電纜，其一端有一個9針串行端口，另一端有一個RJ-45連接器（如網絡電纜）。</span><span>該電纜用於將計算機連接到CISCO路由器或交換機以執行配置任務。</span><span>或調製解調器電纜將計算機連接到外部調製解調器。</span><span>當今使用的最常見的串行電纜是CISCO翻轉電纜<span style="color: #ff0000;">，其一端有一個9針串行端口，而另一端有一個RJ-45連接器（如網絡電纜）。</span></span><span><span style="color: #ff0000;">該電纜用於將計算機連接到CISCO路由器或交換機以執行配置任務。</span></span></span></p>
 </div>
 </div>
@@ -121,35 +252,54 @@
 <p><span><span style="color: #ff0000;">Parallel ports</span>:Parallel ports, also known as LPT (line printer terminal) ports, were used heavily in the 1980s and 1990s for parallel communication as input/output ports. They were often used for printers and scanners. USB has replaced parallel ports for all of these uses in modern computers, and few people will still have a need for a parallel port in contemporary computing. If your computer doesn’t have a parallel port (which is very common in modern machines), you could add one using an expansion card or a USB to parallel adapter. Parallel ports come in a standard DB-25 (containing 25 pins) cable. Other varieties of cables exist, including a DB-25 to Centronics 36-pin cable (common with printers), DB-25 to DB-25 cable (common with switchboxes), and DB-25 to DB-25 with the transmit/receive pins reversed (common for computer to computer connections for data transfer). Parallel ports are generally faster than serial ports, since they send data in parallel with eight bits at a time going over the wire. Parallel ports can be configured as output only or bidirectional ports. The ports are also configured as EPP (enhanced parallel port), ECP (enhanced capabilities port), and EPP/ECP. Under EPP, the port uses interrupt request (IRQ) and I/O addresses for fastest speeds. In ECP, the port can support daisy-chaining of devices and uses IRQ, I/O address, and DMA channels, and is considered resource hungry. EPP/ECP combines both modes into a single configuration, allowing for maximum compatibility. Parallel ports transmit data at up to two Mbps and receive data at 500 Kbps, which is very slow by today’s standards.</span></p>
 <p><span>翻譯:<span style="color: #ff0000;">並列埠，也稱為LPT（行式打印機終端）端口</span>，在1980年代和1990年代大量用於並行通信，作為輸入/輸出端口。<span>它們通常用於打印機和掃描儀。</span><span>USB已經取代了並行端口，可用於現代計算機中的所有這些用途，而當代計算機中仍然很少有人需要並行端口。</span><span>如果您的計算機沒有並行端口（這在現代計算機中很常見），則可以使用擴展卡或USB到並行適配器添加一個。</span><span>並行端口採用標準的DB-25（包含25針）電纜。</span><span>還存在其他各種電纜，包括DB-25至Centronics 36針電纜（與打印機共用），DB-25至DB-25電纜（與配電箱共用），</span><span>和DB-25到DB-25，發射/接收引腳顛倒了（計算機到計算機的連接通常用於數據傳輸）。</span><span style="color: #ff0000;">並行端口通常比串行端口快，因為並行端口一次通過8位並行發送數據。</span><span><span style="color: #ff0000;">並行端口可以配置為僅輸出端口或雙向端口</span>。</span><span>這些端口還配置為EPP（增強型並行端口），ECP（增強功能端口）和EPP / ECP。</span><span>在EPP下，端口使用中斷請求（IRQ）和I / O地址以獲得最快的速度。</span><span>在ECP中，端口可以支持設備的菊花鏈連接，並使用IRQ，I / O地址和DMA通道，並且被認為是資源匱乏。</span><span style="color: #ff0000;">EPP / ECP將兩種模式組合為一個配置，以實現最大的兼容性。</span></span></p>
 <p><span><span style="color: #ff0000;"></span></span></p>
-<h2><span>Pch 17</span></h2>
-<p><span></span></p>
-<p>Pch 17 1、Notebook Features and Components</p>
-<p>原文:</p>
-<p id="N1068B" lang="">Laptops, netbooks, and notebooks are computers that are specifically designed for mobile use, unlike standard desktop workstations that remain stationary. The first laptops were created in the 1970s, but only for very specialized uses. Widespread adoption of laptop computers did not occur until the 1990s, but today they are in use everywhere. Originally, there were distinctions between laptops, notebooks, and netbooks, but in our discussions the terms will be used interchangeably. The distinctions between laptops, notebooks, and netbooks can most often be attributed to marketing, and many of those differences have morphed as the industry continues to evolve. Laptops and notebooks have essentially become a reference to fully equipped mobile computers with hardware and software availability similar to standard desktops using full-instruction set processors (x86 or x64). Most netbooks and tablets generally use embedded processors, such as arm-based RISC or similar. For example, an Alienware R-18 or an HP Elite series laptop runs a full operating system and can support any software designed for a desktop PC. Apple Macbook Pro and Air laptops also run desktop-equivalent, full operating systems. Classifications for a laptop might include desktop replacement, gaming rig, multimedia, or business class. Notebooks, as a subset of laptops, can be further classified as business class, ultrabook, or ultra-portable. Generally, the biggest differences between laptops and notebooks are the physical dimensions and weight.</p>
-<p id="N1068E" lang="">While most laptops and notebooks may share similar processor design and software with their desktop counterparts, netbooks and tablets are quite different, because netbooks and tablets use ARM or MIPS RISC processors. In netbooks and tablets expandability is usually limited to an external USB port and micro-SD card reader. Netbook as a name is increasingly being replaced with "Chromebook", which is available from most major computer manufacturers. The OS and software available is limited and specialized for these processors. Current models include the Android and Windows RT operating systems. With the power of cloud computing and software as a service (SaaS), netbooks and tablets are more enticing for users because of their lower cost, lightweight nature, and longer battery life. We will discuss tablets separately as a “mobile device” in another module.</p>
-<p id="N10691" lang="">Laptops are regular computers and are fully capable of completing all of the same functions as a desktop workstation. As stated above, the main difference is their portability and size. The main difference is their size: they are much smaller and more compact than a traditional workstation. For this reason, they are limited in their internal component replacement, upgrades, and expansion, and these upgrades are performed differently than in a traditional computer workstation. The main differences between laptops, notebooks, and netbooks are their size and the amount of processing power and capabilities they have. Laptops tend to have more internal storage, video capabilities, and processing power than the smaller netbooks. Because laptops and notebooks are smaller than their desktop counterparts, most laptops compromise on power to allow for mobility and smaller size. The compact size of these devices reduces their ability to provide cooling. Therefore, processing power is often sacrificed to minimize heat and maximize battery life.</p>
-<p id="N10694" lang="">In spite of these limitations for most laptops, most all manufacturers offer models with top of the line mobile processors, discrete graphics cards, improved cooling, and a comparable amount of RAM (currently up to 32 GB). With this kind of processing power and speed, laptops users may experience less than average battery life.</p>
-<p id="N10697" lang="">The most common type of memory used in laptop computers is the small outline dual in-line memory module (SODIMM). SODIMM is a good option for laptop computers, as it takes up a fraction of the space the dual in-line memory module (DIMM) of a typical desktop computer does.</p>
-<p lang=""><img alt="" height="225" src="/images/5ef.jpg" width="225"/></p>
-<p lang="">翻譯:</p>
-<p id="N1068B" lang=""><span><span style="color: #ff0000;">筆記型電腦，上網本和筆記型電腦是專門為移動用途而設計的計算機</span>，與保持靜止的標準台式機工作站不同。第一台筆記型電腦創建於1970年代，但僅用於非常專業的用途。直到1990年代，筆記型電腦才被廣泛採用，但是今天它們在世界各地都得到了使用。最初，筆記型電腦，筆記型電腦和上網本之間存在區別，但是在我們的討論中，這些術語可以互換使用。筆記型電腦，筆記型電腦和上網本之間的區別通常可以歸因於市場營銷，並且隨著行業的不斷發展，這些差異中的許多差異都在變化。筆記型電腦和筆記型電腦實質上已成為具有硬件和軟件可用性的功能齊全的移動計算機的參考，類似於使用全指令集處理器（x86或x64）的標準台式機。大多數上網本和平板電腦通常使用嵌入式處理器，例如基於Arm的RISC或類似處理器。例如，Alienware R-18或HP Elite系列筆記型電腦運行完整的操作系統，並且可以支持為台式PC設計的任何軟件。Apple Macbook Pro和Air筆記型電腦還運行與台式機等效的完整操作系統。筆記型電腦的分類可能包括台式機更換，遊戲機，多媒體或商務艙。筆記型電腦，作為筆記型電腦的子集，可以進一步分為商務類，超級本或超便攜式。通常，筆記型電腦和筆記型電腦之間的最大區別是物理尺寸和重量。</span></p>
-<p id="N1068E" lang=""><span><span>儘管大多數筆記型電腦和筆記型電腦可能與台式機共享相似的處理器設計和軟件，<span style="color: #ff0000;">但上網本和平板電腦卻大不相同，因為上網本和平板電腦使用ARM或MIPS RISC處理器。</span></span><span>在上網本和平板電腦中，可擴展性通常僅限於外部USB端口和micro-SD讀卡器。</span><span>上網本的名稱正越來越多地由大多數主要計算機製造商提供的“ Chromebook”代替。</span><span>可用的OS和軟件受限制並且專門針對這些處理器。</span><span>當前的模型包括Android和Windows RT操作系統。</span><span>借助雲計算和軟件即服務（SaaS）的強大功能，</span><span>上網本和平板電腦具有較低的成本，輕巧的特性和更長的電池壽命，因此對用戶更具吸引力。</span><span>我們將在另一個模塊中將平板電腦作為“移動設備”進行單獨討論。</span></span></p>
-<p id="N10691" lang=""><span><span>筆記型電腦是普通計算機，完全能夠完成與台式機工作站相同的所有功能。</span><span>如上所述，主要區別在於它們的可移植性和大小。</span><span>它們的主要區別在於它們的大小：它們比傳統的工作站小得多，而且更緊湊。</span><span>因此，它們在內部組件更換，升級和擴展方面受到限制，並且這些升級的執行方式與傳統計算機工作站不同。</span><span>筆記型電腦，筆記型電腦和上網本之間的主要區別在於它們的大小以及它們具有的處理能力和功能量。</span><span>筆記型電腦往往比較小的上網本具有更多的內部存儲，視頻功能和處理能力。</span><span style="color: #ff0000;">由於筆記型電腦和筆記型電腦的尺寸小於台式機，大多數筆記型電腦會在功耗上有所妥協，以實現移動性和更小的尺寸。這些設備的緊湊尺寸降低了它們提供冷卻的能力。因此，通常犧牲處理能力以最小化熱量並最大化電池壽命。</span></span></p>
-<p id="N10694" lang=""><span><span>儘管大多數筆記型電腦都有這些限制，但大多數所有製造商都提供配備頂級移動處理器，獨立顯卡，改進的散熱和相當數量的RAM（當前最高32 GB）的型號。</span><span>通過這種處理能力和速度，筆記型電腦用戶可能會遇到比平均電池壽命短的情況。</span></span></p>
-<p id="N10697" lang=""><span style="color: #ff0000;">便攜式計算機中最常用的內存類型是小型雙列直插式內存模塊（SODIMM）。SODIMM對於便攜式計算機來說是一個不錯的選擇，因為它僅佔台式計算機雙列直插式內存模塊（DIMM）的一小部分。</span></p>
-<p lang=""><span style="color: #ff0000;"></span></p>
-<p lang="">Pch 17、2 Installing and Configuring Laptop Hardware</p>
-<p lang="">原文:<span>The first method that was developed to expand a laptop’s capabilities was the Personal Computer Memory Card International Association (PCMCIA) card. These cards were inserted into an expansion slot on the slide of the laptop and fit almost completely inside the casing of the machine. These cards originally came as PC cards (16-bit or 32-bit) or CardBus (32-bit) cards that fit into the associated slot. These cards were hot-swappable, meaning that the card could be ejected or inserted while the computer was still powered on. The idea of these cards was to provide a standard expansion port, similar to a PCI expansion slot on a traditional desktop computer. These cards had 68 pins in a two-row connector. These cards came in three types: type I, type II, and type III. Type I was used to provide additional memory and storage capabilities, but is now obsolete. Type II was used to provide additional input/output connections (like FireWire or USB), a network interface card, modem, or other such external devices/connectivity. Type II cards were only 5 mm thick, so they usually had to include a dongle to convert a flat proprietary connection to a standard connection like FireWire, RJ-45, or RJ-11. Type III was used as an upgraded version of the type II device and was thicker, reaching 10.5 mm in size, reducing or eliminating the need for a dongle. Cardbus, an improvement to the PC card, was a full 32-bit expansion card system and operated very similarly to the PC card. The CardBus was easily identified by looking at the edge of the expansion card, since it contained a golden edge where the connectors were.</span><span><img alt="" height="165" src="/images/wdd.jpg" width="220"/></span></p>
-<p lang="">翻譯:<span>擴展筆記記型電腦功能的第一種方法是國際個人計算機存儲卡協會（PCMCIA）卡。</span><span>這些卡已插入筆記型電腦滑軌上的擴展槽中，幾乎完全可以裝入計算機機箱內。</span><span><span style="color: #ff0000;">這些卡最初是作為可插入相關插槽的PC卡（16位或32位）或CardBus（32位）卡來的</span>。</span><span>這些卡是可熱插拔的，這意味著可以在計算機仍打開電源時彈出或插入卡。</span><span><span style="color: #ff0000;">這些卡的想法是提供一個標準擴展端口，類似於傳統台式計算機上的PCI擴展插槽</span>。</span><span>這些卡在兩行連接器中有68個引腳。</span><span>這些卡分為三種類型：I型，II型和III型。</span><span>類型I用於提供其他內存和存儲功能，但現在已過時。</span><span>類型II用於提供其他輸入/輸出連接（如FireWire或USB），網絡接口卡，調製解調器或其他此類外部設備/連接性。</span><span>II型卡只有5毫米厚，因此它們通常必須包含一個加密狗才能將扁平的專有連接轉換為FireWire，RJ-45或RJ-11等標準連接。</span><span>III型用作II型設備的升級版，它更厚，達到10.5毫米，從而減少或消除了對加密狗的需求。</span><span><span style="color: #ff0000;">Cardbus是PC卡的改進</span>，它是一個完整的32位擴展卡系統，其操作與PC卡非常相似。</span><span style="color: #ff0000;">通過查看擴展卡的邊緣，可以輕鬆識別CardBus，因為它包含連接器所在的金色邊緣。</span></p>
-<p lang=""><span style="color: #000000;"></span></p>
-<p lang=""><span style="color: #000000;">Pch 17 3、</span>Notebook Features</p>
-<p lang="">原文:</p>
-<p id="N106BD" lang="">By pressing the FN key in combination with the notebook specific keys  the user can access features such as increasing or decreasing screen brightness, toggling Wi-Fi and Bluetooth radios on and off, cycling through external monitor connections, adjusting the speaker volume, and other features depending on the specific laptop. Note in the image above that some of the letter and character keys have numbers written on them. That is because most laptops do not have room for a dedicated number pad and these keys provide that functionality when pressing the FN and NUM LOCK combination. If you are typing and notice numbers on the screen instead of letters, it may be the result of accidentally pressing that key sequence.</p>
-<p id="N106C0" lang="">Another special feature of a laptop is the ability to connect an external monitor. Most desktop computers come standard with a single video output, whereas most laptops come with an external video port using HDMI, DisplayPort, DVI, or VGA. This allows you to duplicate, or extend, the internal display to the monitor to create a single continuous “larger” monitor. This is also advantageous when connecting a projector to the external port for presentations.</p>
-<p lang="">翻譯:</p>
-<p id="N106BD" lang=""><span><span style="color: #ff0000;">通過同時按下FN鍵和筆記本專用鍵，用戶可以使用以下功能</span>：增加或降低屏幕亮度，打開和關閉Wi-Fi和藍牙無線電，通過外部顯示器連接循環，調整揚聲器的音量以及其他功能，具體取決於特定的筆記本電腦。請注意，在上圖中，某些字母和字符鍵上面寫有數字。這是因為大多數筆記本電腦沒有足夠的空間容納專用數字鍵盤，並且在按下FN和NUM LOCK組合鍵時，這些鍵可提供該功能。如果您在屏幕上鍵入並註意數字而不是字母，則可能是由於不小心按下該鍵序列而導致的。</span></p>
-<p id="N106C0" lang=""><span><span style="color: #ff0000;">筆記本電腦的另一個特殊功能是可以連接外部顯示器。大多數台式機標配單個視頻輸出，而大多數筆記本電腦均帶有使用HDMI，DisplayPort，DVI或VGA的外部視頻端口。</span><span>這使您可以將內部顯示複製或擴展到監視器，以創建單個連續的“較大”監視器。</span><span>將投影儀連接到外部端口進行演示時，這也是有利的。</span></span></p>
-<p lang=""><span><span></span></span></p>
-<h1>Word</h1>
-</div>
-</div>
+<br />Homework << <a href='Homework.html'>Previous</a> <a href='Pch 17.html'>Next</a> >> Pch 17</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
