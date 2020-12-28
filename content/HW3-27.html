@@ -134,7 +134,59 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">HW3-25 << <a href='HW3-25.html'>Previous</a> <a href='Word.html'>Next</a> >> Word<br /><h1>HW3-27</h1>
-<br />HW3-25 << <a href='HW3-25.html'>Previous</a> <a href='Word.html'>Next</a> >> Word</div>
+<p><span style="background-color: #00ffff;">Tic Tac Toe Draw</span></p>
+<p><span>井字遊戲</span></p>
+<p><span style="background-color: #00ff00;">Exercise 27</span></p>
+<p><span style="background-color: #00ff00;"></span>I<span>n a </span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">previous exercise</a><span><span> </span>we explored the idea of using a list of lists as a “data structure” to store information about a tic tac toe game. In a tic tac toe game, the “game server” needs to know where the<span> </span></span><code class="highlighter-rouge">X</code><span>s and<span> </span></span><code class="highlighter-rouge">O</code><span>s are in the board, to know whether player 1 or player 2 (or whoever is<span> </span></span><code class="highlighter-rouge">X</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">O</code><span><span> </span>won).</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">在先前的練習中，我們探討了使用列表列表作為“數據結構”來存儲有關井字遊戲的信息的想法。在井字遊戲中，“遊戲服務器”需要知道X和O在棋盤上的位置，知道玩家1或玩家2（或X和O誰獲勝）。
+您可以在用戶輸入上參考此練習，在石頭剪刀上參考此練習，以及其他許多參考。<br/><br/></span></pre>
+<p>There has also been an exercise about drawing the actual tic tac toe gameboard using text characters.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">還進行了有關使用文本字符繪製實際井字遊戲板的練習。<br/><br/></span></pre>
+<p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0">The next logical step is to deal with handling user input. When a player (say player 1, who is<span> </span><code class="highlighter-rouge">X</code>) wants to place an<span> </span><code class="highlighter-rouge">X</code><span> </span>on the screen, they can’t just click on a terminal. So we are going to approximate this clicking simply by asking the user for a coordinate of where they want to place their piece.</p>
+<p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0">下一步的邏輯步驟是處理用戶輸入。當玩家（例如，玩家1，即X）想要在屏幕上放置X時，他們不能僅單擊終端。因此，我們將簡單地通過詢問用戶要放置其作品的坐標來近似此點擊。</p>
+<p class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0"></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW" style="background-color: #ffcc00;">Things to note:</span></p>
+<ul>
+<li>For this exercise, assume that player 1 (the first player to move) will always be<span> </span><code class="highlighter-rouge">X</code><span> </span>and player 2 (the second player) will always be<span> </span><code class="highlighter-rouge">O</code>.</li>
+<li>Notice how in the example I gave coordinates for where I want to move starting from (1, 1) instead of (0, 0). To people who don’t program, starting to count at 0 is a strange concept, so it is better for the user experience if the row counts and column counts start at 1. This is not required, but whichever way you choose to implement this, it should be explained to the player.</li>
+<li>Ask the user to enter coordinates in the form “row,col” - a number, then a comma, then a number. Then you can use your Python skills to figure out which row and column they want their piece to be in.</li>
+<li>Don’t worry about checking whether someone won the game, but if a player tries to put a piece in a game position where there already is another piece, do not allow the piece to go there.</li>
+</ul>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW" style="background-color: #ffcc00;">注意事項:</span></p>
+<ul>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>在本練習中，假設玩家1（第一位移動玩家）將始終為X，而玩家2（第二位移動玩家）將始終為O。</span></span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">請注意，在示例中，我如何給出要從（1，1）而不是（0，0）開始移動的坐標。對於不編程的人，從0開始計數是一個奇怪的概念，因此如果行計數和列計數從1開始，則對用戶體驗更好。這不是必需的，但是無論選擇哪種方式來實現，應該向玩家解釋。</span></p>
+</li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">要求用戶以“ row，col”的形式輸入坐標-一個數字，然後是一個逗號，然後是一個數字。然後，您可以使用您的Python技能來確定他們希望自己的作品位於哪一行。</span></p>
+</li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>不必擔心是否有人贏得了比賽，但是如果玩家試圖將一個棋子放置在已經有另一個棋子的遊戲位置中，則不要讓該棋子去那裡。</span></span></li>
+</ul>
+<p><span lang="zh-TW"><span></span></span></p>
+<p><span style="background-color: #ffff00;">Bonus:</span></p>
+<ul>
+<li>For the “standard” exercise, don’t worry about “ending” the game - no need to keep track of how many squares are full. In a bonus version, keep track of how many squares are full and automatically stop asking for moves when there are no more valid moves.</li>
+</ul>
+<p><span style="background-color: #ffff00;">獎勵:</span></p>
+<ul>
+<li>對於“標準”練習，不必擔心“結束”遊戲-無需跟踪有多少個正格。 在獎勵版本中，跟踪多少個正格已滿，並在沒有更多有效移動時自動停止要求移動。</li>
+</ul>
+<p></p>
+<p id="concepts"><span style="background-color: #ff00ff;">Concepts</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>One review concept that is definitely needed (in addition to the user input that is the core of the exercise) is the need to “split” strings.</span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW" style="background-color: #ff00ff;">概念</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>（除了作為練習核心的用戶輸入之外）肯定需要一個審核概念是“拆分”字符串。</span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span></span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>The user will input coordinates in the form “row,col”, which <code class="highlighter-rouge">input()</code><span><span> </span>will then read in as a string. But we really want the numbers that come out of that string, to know which row and column to place the piece at.</span></span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span><span>用戶將以“ row，col”的形式輸入坐標，然後input（）將以字符串形式讀取。 但是我們確實希望從該字符串中得出的數字知道將片段放置在哪一行和哪一列。</span></span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span></span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>One approach is to use the idea of strings as lists to extract the row and column numbers. This works great if your row and column numbers are always single digits - the row will always be at index 0 and the column will always be at index 2. But this breaks when the numbers are larger than one digit (I know, not going to happen in tic tac toe, but it’s easy to image extending this to other games).</span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>一種方法是使用字符串作為列表的概念來提取行號和列號。 如果行號和列號始終是一位數字，則該方法非常有用-行將始終在索引0處，列始終在索引2。但是，當數字大於一位時，這種方法會中斷（我知道， 會在井字遊戲中發生，但很容易將其擴展到其他遊戲。</span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span></span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span></span></span></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre><br />HW3-25 << <a href='HW3-25.html'>Previous</a> <a href='Word.html'>Next</a> >> Word</div>
         
     <!-- footer -->
       <div class="container">
