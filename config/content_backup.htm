@@ -2,7 +2,10 @@
 <p><span style="background-color: #00ff00;">CMSiMDE:<a href="https://40923239.github.io/cp2020/content/index.html">https://40923239.github.io/cp2020/content/index.html</a></span></p>
 <p><a href="Github:https://github.com/40923239/cp2020"><span style="background-color: #00ffff;">Github:</span></a><a href="https://github.com/40923239/cp2020"><span style="background-color: #00ffff;">https://github.com/40923239/cp2020</span></a></p>
 <p></p>
-<h1>HW1</h1>
+<p>心得</p>
+<p>這學期剛開始接觸python，一開始的網路設定，再來的hw1翻譯、hw2的亂數分組到現在的hw3編寫程式，一開始看到hw1的數量真的多到有點怕，但實際的翻譯下，才發現到原來對程式來說英文多麼重要。但hw2我還是有點看不太懂如何去解答。到hw3編寫一點點的程式和翻譯，做過很多次的修改才稍微完成了一點。而教授的教導下，有些課程有點深奧也難理解，但我相信我可以學好python的。</p>
+<p>分數</p>
+<p>65分</p><h1>HW1</h1>
 <p></p>
 <h2>Pch 1</h2>
 <p></p>
@@ -149,8 +152,28 @@
 <p id="N106C0" lang=""><span><span style="color: #ff0000;">筆記本電腦的另一個特殊功能是可以連接外部顯示器。大多數台式機標配單個視頻輸出，而大多數筆記本電腦均帶有使用HDMI，DisplayPort，DVI或VGA的外部視頻端口。</span><span>這使您可以將內部顯示複製或擴展到監視器，以創建單個連續的“較大”監視器。</span><span>將投影儀連接到外部端口進行演示時，這也是有利的。</span></span></p>
 <p lang=""><span><span></span></span></p>
 <h1>HW2</h1>
-<p><span><span></span></span></p>
-<h1>HW3</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+from random import shuffle
+
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762"
+cp1a = []
+for line in urllib.request.urlopen(target_url):
+cp1a.append(line.decode('utf-8').rstrip())
+
+#以上為導出網址中的數列
+
+shuffle(cp1a)
+n = 5
+m = int(len(cp1a)/n)
+list2 = []
+for i in range(0, len(cp1a), m):
+list2.append(cp1a[i:i+m])
+print(list2)
+
+#以上為數列打亂後重新分組</pre>
+<p></p>
+<p>甲班新的分組</p>
+<p><br/><img alt="" height="175" src="/images/SharedScreenshot.jpg" width="1225"/></p><h1>HW3</h1>
 <h2>HW3-14</h2>
 <p><span style="color: #000000; background-color: #00ffff;"><strong>List Remove Duplicates</strong></span></p>
 <p>刪除重複項練習</p>

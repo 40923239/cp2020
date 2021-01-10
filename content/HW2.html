@@ -134,8 +134,29 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Pch 17 << <a href='Pch 17.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3<br /><h1>HW2</h1>
-<p><span><span></span></span></p>
-<br />Pch 17 << <a href='Pch 17.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
+<p>讓甲班分組</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+from random import shuffle
+
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762"
+cp1a = []
+for line in urllib.request.urlopen(target_url):
+cp1a.append(line.decode('utf-8').rstrip())
+
+#以上為導出網址中的數列
+
+shuffle(cp1a)
+n = 5
+m = int(len(cp1a)/n)
+list2 = []
+for i in range(0, len(cp1a), m):
+list2.append(cp1a[i:i+m])
+print(list2)
+
+#以上為數列打亂後重新分組</pre>
+<p></p>
+<p>甲班新的分組</p>
+<p><br/><img alt="" height="175" src="./../images/SharedScreenshot.jpg" width="1225"/></p><br />Pch 17 << <a href='Pch 17.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
         
     <!-- footer -->
       <div class="container">
